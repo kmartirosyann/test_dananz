@@ -1,0 +1,136 @@
+.component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 14.1vmax;
+        background: #2C3878;
+
+        .container {
+            display: flex;
+            max-width: 83.5vw;
+            gap: 10.7vw;
+
+            p {
+                max-width: 623px;
+                font-weight: 600;
+                font-size: 2.5vw;
+                line-height: 170%;
+                color: #fff;
+            }
+
+            .contact_block {
+                p {
+                    font-weight: 400;
+                    font-size: 1.3vmax;
+                    line-height: 160%;
+                    color: #D9D9D9;
+                }
+
+                button {
+                    font-weight: 500;
+                    font-size: 1vmax;
+                    line-height: 1.5vmax;
+                    margin-top: 1.4vmax;
+                    width: 9.86vmax;
+                    height: 3.4vmax;
+                }
+            }
+        }
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5.6vw;
+        width: 83.5vw;
+
+        .logo {
+            width: 8.8vmax;
+            height: 3.8vmax;
+        }
+
+        p {
+            max-width: 481px;
+            font-weight: 600;
+            font-size: 2.5vmax;
+            line-height: 170%;
+            color: #333;
+        }
+
+        .email_address {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            p {
+                span {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background: #333;
+                }
+
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+            }
+
+            input {
+                margin-top: 23px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #D9D9D9;
+                width: 100%;
+                border-bottom: 1px solid #141414;
+            }
+
+            .icons {
+                margin: 40px 0 150px;
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 160%;
+                }
+
+                .icons_box {
+                    display: flex;
+                    gap: 28px;
+
+                    span {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        background: #D9D9D9;
+                        border: 1px solid #D9D9D9;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .component {
+        .box {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 30px;
+        }
+    }
+}

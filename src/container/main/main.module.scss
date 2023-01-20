@@ -1,0 +1,137 @@
+.container_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 13.3vmax;
+    margin-bottom: 6.2vmax;
+    padding: 0 15px;
+
+    .title_box {
+        max-width: 33vmax;
+        text-align: center;
+        margin-bottom: 3.7vw;
+
+        .title {
+            font-weight: 700;
+            font-size: 3.9vw;
+            line-height: 140%;
+            margin-bottom: 2.8vw;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.3vmax;
+            line-height: 160%;
+        }
+    }
+
+    .room_1 {
+        width: 83.3vw;
+        height: 35.8vmax;
+    }
+
+    .section {
+        width: 100%;
+        margin: 7vw 0 5.7vw;
+
+        .text_box {
+            display: flex;
+            gap: 24px;
+
+            .title_project {
+                display: flex;
+                flex-direction: column;
+                max-width: 50%;
+
+                h2 {
+                    margin-bottom: 1.67vmax;
+                    font-weight: 600;
+                    font-size: 1.67vmax;
+                    line-height: 140%;
+                    color: #333;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.28vmax;
+                    line-height: 160%;
+                    color: #9C9C9C;
+                }
+
+                .text_day {
+                    margin-top: 4.2vmax;
+                    display: flex;
+                    align-items: flex-end;
+                    width: 100%;
+                    gap: 80px;
+                }
+            }
+        }
+    }
+
+    .mt_30 {
+        margin-top: 2.2vmax;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        gap: 2.3vw;
+        width: 100%;
+
+        .cupel {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            width: 100%;
+        }
+
+        .cupel_img {
+            width: 100%;
+            max-width: 40.5vw;
+            height: 35.6vw;
+        }
+
+        .single {
+            width: 100%;
+            max-width: 83.3vw;
+            height: 35.5vw;
+        }
+
+        .single_img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 765px) {
+    .container_main {
+        .section {
+            .text_box {
+                flex-direction: column;
+
+                .title_project {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .images {
+            gap: 0.5vw;
+
+            .single {
+                width: 81vw;
+                max-width: 83.3vw;
+                height: 34.5vw;
+            }
+        }
+
+        .room_1 {
+            height: 35.8vmin;
+        }
+    }
+
+
+}
